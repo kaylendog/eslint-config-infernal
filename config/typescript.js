@@ -28,7 +28,7 @@ module.exports = {
 		"@typescript-eslint/prefer-readonly": "warn",
 		"@typescript-eslint/sort-type-constituents": "warn",
 		"@typescript-eslint/strict-boolean-expressions": "warn",
-		"@typescript-eslint/type-annotation-spacing": ["warn", { before: false, after: true }],
+		"@typescript-eslint/type-annotation-spacing": ["warn", {before: false, after: true}],
 		// fixable - extension
 		"no-return-await": "off",
 		"@typescript-eslint/return-await": ["error", "in-try-catch"],
