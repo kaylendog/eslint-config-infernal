@@ -200,5 +200,86 @@ module.exports = {
 			},
 		],
 		"lines-between-class-members": ["warn", "always", { exceptAfterSingleLine: true }],
+		"max-len": [
+			"warn",
+			{
+				code: 100,
+				tabWidth: 4,
+			},
+		],
+		"max-statements-per-line": ["warn", { max: 1 }],
+		"new-parens": "warn",
+		"newline-per-chained-call": ["warn", { ignoreChainWithDepth: 2 }],
+		"no-extra-parens": [
+			"warn",
+			{
+				nestedBinaryExpressions: false,
+			},
+		],
+		"no-multi-spaces": "warn",
+		"no-multiple-empty-lines": [
+			"warn",
+			{
+				max: 1,
+				maxEOF: 1,
+			},
+		],
+		"no-trailing-spaces": "warn",
+		"no-whitespace-before-property": "warn",
+		"object-curly-newline": [
+			"warn",
+			{
+				multiline: true,
+			},
+		],
+		"object-curly-spacing": ["warn", "always"],
+		"object-property-newline": ["warn", "always"],
+		"operator-linebreak": ["warn", "before"],
+		"padded-blocks": ["warn", "never"],
+		"padding-line-between-statements": [
+			{ blankLine: "always", prev: ["const", "let", "var"], next: "*" },
+			{ blankLine: "any", prev: ["const", "let", "var"], next: ["const", "let", "var"] },
+		],
+		quotes: ["warn", "double"],
+		"rest-spread-spacing": ["warn", "never"],
+		semi: ["warn", "always"],
+		"semi-spacing": [
+			"warn",
+			{
+				before: false,
+				after: true,
+			},
+		],
+		"semi-style": ["warn", "last"],
+		"space-before-blocks": ["warn", "always"],
+		"space-before-function-paren": [
+			"warn",
+			{
+				anonymous: "always",
+				named: "never",
+				asyncArrow: "always",
+			},
+		],
+		"space-in-parens": ["warn", "never"],
+		"space-infix-ops": "warn",
+		"space-unary-ops": [
+			"warn",
+			{
+				words: true,
+				nonwords: false,
+			},
+		],
+		"switch-colon-spacing": [
+			"warn",
+			{
+				after: true,
+				before: false,
+			},
+		],
+		"template-curly-spacing": ["warn", "never"],
+		"template-tag-spacing": ["warn", "never"],
+		"unicode-bom": ["warn", "never"],
+		"wrap-iife": ["warn", "inside"],
+		"wrap-regex": ["warn", "before"],
 	},
 };
