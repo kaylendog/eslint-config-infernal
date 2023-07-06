@@ -19,6 +19,8 @@ Here's a brief overview of the rules:
 
 ## Formatting
 
+This config is intended to be used in conjunction with [Prettier](https://prettier.io/). You can find my Prettier config [here](https://github.com/kaylendog/prettier-config-infernal).
+
 I have disabled the majority of formatting rules, since it's preferable to use a formatter over ESLint for this purpose. I have enabled a few rules that I find useful, but these are not intended to be exhaustive. Check out [this article](https://typescript-eslint.io/linting/troubleshooting/formatting) by the TypeScript ESLint team for more information.
 
 ## License
