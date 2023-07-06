@@ -18,7 +18,7 @@ module.exports = {
 			},
 		],
 		"@typescript-eslint/member-delimiter-style": "off",
-		"@typescript/method-signature-style": ["warn", "method"],
+		"@typescript-eslint/method-signature-style": ["warn", "method"],
 		"@typescript-eslint/no-confusing-void-expression": "warn",
 		"@typescript-eslint/no-duplicate-type-constituents": "warn",
 		"@typescript-eslint/no-implicit-any-catch": "warn",

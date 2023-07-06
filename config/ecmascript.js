@@ -3,7 +3,7 @@ module.exports = {
 	rules: {
 		"no-constructor-return": "error",
 		"no-duplicate-imports": "warn",
-		"no-new-native-constructors": "error",
+		"no-new-native-nonconstructor": "error",
 		"no-promise-executor-return": "warn",
 		"no-self-compare": "warn",
 		"no-template-curly-in-string": "warn",
@@ -16,10 +16,13 @@ module.exports = {
 		"accessor-pairs": "error",
 		"arrow-body-style": ["error", "as-needed"],
 		"block-scoped-var": "error",
-		camelcase: {
-			properties: "always",
-		},
-		"cyclomatic-complexity": ["error", 10],
+		camelcase: [
+			"error",
+			{
+				properties: "always",
+			},
+		],
+		complexity: ["error", 10],
 		"consistent-return": "error",
 		"consistent-this": "error",
 		curly: ["error", "all"],
@@ -29,7 +32,7 @@ module.exports = {
 		"dot-notation": "error",
 		eqeqeq: "error",
 		"func-name-matching": "error",
-		"func-names": "as-needed",
+		"func-names": ["error", "as-needed"],
 		"func-style": ["error", "declaration", { allowArrowFunctions: true }],
 		"grouped-accessor-pairs": "error",
 		"init-declarations": ["error", "always"],
@@ -152,15 +155,9 @@ module.exports = {
 		"new-parens": "warn",
 		"no-extra-parens": [
 			"warn",
+			"all",
 			{
 				nestedBinaryExpressions: false,
-			},
-		],
-		"no-multiple-empty-lines": [
-			"warn",
-			{
-				max: 1,
-				maxEOF: 1,
 			},
 		],
 	},
