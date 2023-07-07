@@ -130,7 +130,7 @@ module.exports = {
 						allowLiterals: "in-unions-and-intersections",
 						allowMappedTypes: "always",
 						allowTupleTypes: "in-unions-and-intersections",
-						allowGenerics: "never",
+						allowGenerics: "always",
 					},
 				],
 				"@typescript-eslint/parameter-properties": [
