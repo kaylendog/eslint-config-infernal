@@ -1,4 +1,4 @@
-export const fibonacci = (n) => {
+module.exports = (n) => {
 	let a = 1;
 	let b = 0;
 

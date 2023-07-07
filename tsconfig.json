@@ -2,7 +2,8 @@
 	"compilerOptions": {
 		"target": "ESNext",
 		"module": "CommonJS",
-		"strict": true
+		"strict": true,
+		"jsx": "react"
 	},
-	"include": ["examples/**/*.ts"]
+	"include": ["./examples/**/*.ts", "./examples/**/*.tsx"]
 }

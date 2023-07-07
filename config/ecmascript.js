@@ -1,5 +1,13 @@
+const ECMA_VERSION = 2020;
+
 module.exports = {
-	extends: ["eslint:recommended", "prettier"],
+	extends: ["eslint:recommended"],
+	parserOptions: {
+		ecmaVersion: ECMA_VERSION,
+	},
+	env: {
+		node: true,
+	},
 	rules: {
 		"no-constructor-return": "error",
 		"no-duplicate-imports": "warn",
@@ -33,10 +41,10 @@ module.exports = {
 		eqeqeq: "error",
 		"func-name-matching": "error",
 		"func-names": ["error", "as-needed"],
-		"func-style": ["error", "declaration", {allowArrowFunctions: true}],
+		"func-style": ["error", "declaration", { allowArrowFunctions: true }],
 		"grouped-accessor-pairs": "error",
 		"init-declarations": ["error", "always"],
-		"logical-assignment-operators": ["warn", "always", {enforceForIfStatements: true}],
+		"logical-assignment-operators": ["warn", "always", { enforceForIfStatements: true }],
 		"max-classes-per-file": ["error", 1],
 		"max-depth": ["warn", 4],
 		"max-lines": ["warn", 500],
@@ -59,7 +67,7 @@ module.exports = {
 		"no-extra-bind": "error",
 		"no-extra-label": "warn",
 		"no-extra-semi": "error",
-		"no-implicit-coercion": ["error", {boolean: false}],
+		"no-implicit-coercion": ["error", { boolean: false }],
 		"no-implied-eval": "error",
 		"no-inline-comments": "warn",
 		"no-invalid-this": "error",
@@ -71,7 +79,7 @@ module.exports = {
 		"no-magic-numbers": [
 			"warn",
 			{
-				ignore: Array.from({length: 100}).map((_, i) => i - 50),
+				ignore: Array.from({ length: 100 }).map((_, i) => i - 50),
 				ignoreArrayIndexes: true,
 				ignoreDefaultValues: true,
 				detectObjects: true,
@@ -151,7 +159,7 @@ module.exports = {
 				allowClassEnd: true,
 			},
 		],
-		"lines-between-class-members": ["warn", "always", {exceptAfterSingleLine: true}],
+		"lines-between-class-members": ["warn", "always", { exceptAfterSingleLine: true }],
 		"new-parens": "warn",
 		"no-extra-parens": [
 			"warn",

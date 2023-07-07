@@ -2,5 +2,11 @@
 	"extends": "./index.js",
 	"parserOptions": {
 		"project": "./tsconfig.json"
-	}
+	},
+	"overrides": [
+		{
+			"files": "*.tsx",
+			"extends": "./react.js"
+		}
+	]
 }
