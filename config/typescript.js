@@ -80,7 +80,7 @@ module.exports = {
 
 			{
 				selector: "variable",
-				format: ["camelCase", "UPPER_CASE"],
+				format: ["camelCase", "UPPER_CASE", "PascalCase"],
 			},
 			{
 				selector: "parameter",
@@ -121,13 +121,14 @@ module.exports = {
 				prefer: "parameter-property",
 			},
 		],
-		"@typescript-eslint/prefer-readonly-parameter-types": [
-			"error",
-			{
-				checkParameterProperties: true,
-				treatMethodsAsReadonly: true,
-			},
-		],
+		// TODO: doesn't behave with regular functions
+		// "@typescript-eslint/prefer-readonly-parameter-types": [
+		// 	"error",
+		// 	{
+		// 		checkParameterProperties: true,
+		// 		treatMethodsAsReadonly: true,
+		// 	},
+		// ],
 		"@typescript-eslint/switch-exhaustiveness-check": "error",
 		"@typescript-eslint/typedef": [
 			"error",
@@ -156,6 +157,11 @@ module.exports = {
 		"@typescript-eslint/no-magic-numbers": [
 			"error",
 			{
+				ignore: Array.from({length: 100}).map((_, i) => i - 50),
+				ignoreArrayIndexes: true,
+				ignoreDefaultValues: true,
+				detectObjects: true,
+				enforceConst: true,
 				ignoreEnums: true,
 				ignoreNumericLiteralTypes: true,
 				ignoreTypeIndexes: true,
