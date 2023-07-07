@@ -20,7 +20,7 @@ module.exports = {
 				// fixable - supported
 				"@typescript-eslint/consistent-type-exports": "warn",
 				// prefer no-type-imports since prettier removes the "type" keyword from imports
-				"@typescript-eslint/consistent-type-imports": ["warn", {prefer: "no-type-imports"}],
+				"@typescript-eslint/consistent-type-imports": ["warn", { prefer: "no-type-imports" }],
 				"@typescript-eslint/explicit-member-accessibility": [
 					"warn",
 					{
@@ -38,7 +38,7 @@ module.exports = {
 				"@typescript-eslint/prefer-readonly": "warn",
 				"@typescript-eslint/sort-type-constituents": "warn",
 				"@typescript-eslint/strict-boolean-expressions": "warn",
-				"@typescript-eslint/type-annotation-spacing": ["warn", {before: false, after: true}],
+				"@typescript-eslint/type-annotation-spacing": ["warn", { before: false, after: true }],
 				// fixable - extension
 				"no-return-await": "off",
 				"@typescript-eslint/return-await": ["error", "in-try-catch"],
@@ -123,7 +123,7 @@ module.exports = {
 				"@typescript-eslint/no-type-alias": [
 					"error",
 					{
-						allowAliases: "in-unions-and-intersections",
+						allowAliases: "always",
 						allowCallbacks: "always",
 						allowConditionalTypes: "always",
 						allowConstructors: "never",
@@ -167,7 +167,7 @@ module.exports = {
 					"error",
 					{
 						// allow -50 to 50
-						ignore: Array.from({length: 101}).map((_, i) => i - 50),
+						ignore: Array.from({ length: 101 }).map((_, i) => i - 50),
 						ignoreArrayIndexes: true,
 						ignoreDefaultValues: true,
 						detectObjects: true,
