@@ -130,18 +130,8 @@ module.exports = {
 		// 	},
 		// ],
 		"@typescript-eslint/switch-exhaustiveness-check": "error",
-		"@typescript-eslint/typedef": [
-			"error",
-			{
-				arrayDestructuring: false,
-				arrowParameter: true,
-				memberVariableDeclaration: true,
-				objectDestructuring: false,
-				parameter: true,
-				propertyDeclaration: true,
-				variableDeclaration: false,
-			},
-		],
+		// disabled in favour of compiler definitions - see https://typescript-eslint.io/rules/typedef/
+		"@typescript-eslint/typedef": "off",
 		// not fixable - extension
 		"default-param-last": "off",
 		"@typescript-eslint/default-param-last": "error",

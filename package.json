@@ -1,9 +1,13 @@
 {
 	"name": "eslint-config-infernal",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "Personal ESLint config for TypeScript projects",
 	"main": "index.js",
-	"keywords": [],
+	"keywords": [
+		"eslint",
+		"config",
+		"eslint-config"
+	],
 	"author": {
 		"name": "Kaylen Dart",
 		"email": "actuallyori@gmail.com"
