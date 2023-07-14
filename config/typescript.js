@@ -12,8 +12,9 @@ module.exports = {
 			plugins: ["@typescript-eslint"],
 			extends: [
 				"plugin:@typescript-eslint/recommended",
-				"plugin:@typescript-eslint/recommended-requiring-type-checking",
+				"plugin:@typescript-eslint/recommended-type-checked",
 				"plugin:@typescript-eslint/strict",
+				"plugin:@typescript-eslint/strict-type-checked",
 			],
 			files: ["*.{ts, mts, cts, tsx}"],
 			rules: {
@@ -31,7 +32,6 @@ module.exports = {
 				"@typescript-eslint/method-signature-style": ["warn", "method"],
 				"@typescript-eslint/no-confusing-void-expression": "warn",
 				"@typescript-eslint/no-duplicate-type-constituents": "warn",
-				"@typescript-eslint/no-implicit-any-catch": "warn",
 				"@typescript-eslint/no-import-type-side-effects": "warn",
 				"@typescript-eslint/no-unnecessary-qualifier": "warn",
 				"@typescript-eslint/no-useless-empty-export": "warn",

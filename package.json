@@ -1,12 +1,16 @@
 {
 	"name": "eslint-config-infernal",
-	"version": "2.0.3",
+	"version": "2.1.0",
 	"description": "Personal ESLint config for TypeScript projects",
 	"main": "index.js",
 	"keywords": [
 		"eslint",
 		"config",
-		"eslint-config"
+		"eslint-config",
+		"typescript",
+		"typescript-eslint",
+		"react",
+		"next.js"
 	],
 	"author": {
 		"name": "Kaylen Dart",
@@ -14,20 +18,16 @@
 	},
 	"license": "MIT",
 	"peerDependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.61.0",
-		"@typescript-eslint/parser": "^5.61.0",
-		"eslint": "^8.44.0",
-		"eslint-config-prettier": "^8.8.0",
-		"eslint-plugin-react": "^7.32.2",
-		"eslint-plugin-react-hooks": "^4.6.0",
-		"typescript": "^5.1.6"
+		"@typescript-eslint/eslint-plugin": "~6",
+		"@typescript-eslint/parser": "~6",
+		"eslint-config-next": "~13",
+		"eslint-config-prettier": "~8",
+		"eslint-plugin-react-hooks": "~4",
+		"eslint-plugin-react": "~7",
+		"eslint": "~8",
+		"typescript": "~5"
 	},
 	"devDependencies": {
 		"prettier-config-infernal": "^1.1.0"
-	},
-	"dependencies": {
-		"eslint-config-next": "^13.4.9",
-		"eslint-plugin-react": "^7.32.2",
-		"eslint-plugin-react-hooks": "^4.6.0"
 	}
 }
