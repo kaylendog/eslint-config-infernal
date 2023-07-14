@@ -83,4 +83,6 @@ ESLint team for more information.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the
+[LICENSE-MIT](https://github.com/kaylendog/eslint-config-infernal/blob/main/LICENSE-MIT) file for
+details.
