@@ -159,12 +159,11 @@ module.exports = {
 						prefer: "parameter-property",
 					},
 				],
-				// TODO: doesn't behave with regular functions
 				"@typescript-eslint/prefer-readonly-parameter-types": [
 					"error",
 					{
-						checkParameterProperties: true,
-						treatMethodsAsReadonly: true,
+						checkParameterProperties: false,
+						treatMethodsAsReadonly: false,
 					},
 				],
 				"@typescript-eslint/switch-exhaustiveness-check": "error",
@@ -185,8 +184,8 @@ module.exports = {
 				"@typescript-eslint/no-magic-numbers": [
 					"error",
 					{
-						// allow -50 to 50 since these are common
-						ignore: Array.from({ length: 101 }).map((_, i) => i - 50),
+						// allow -100 to 100 since these are common
+						ignore: Array.from({ length: 201 }).map((_, i) => i - 100),
 						ignoreArrayIndexes: true,
 						ignoreDefaultValues: true,
 						detectObjects: true,

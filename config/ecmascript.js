@@ -80,7 +80,7 @@ module.exports = {
 		"no-magic-numbers": [
 			"warn",
 			{
-				ignore: Array.from({ length: 100 }).map((_, i) => i - 50),
+				ignore: Array.from({ length: 201 }).map((_, i) => i - 100),
 				ignoreArrayIndexes: true,
 				ignoreDefaultValues: true,
 				detectObjects: true,
