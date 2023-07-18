@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-infernal",
-	"version": "2.1.0",
+	"version": "3.0.0",
 	"description": "Personal ESLint config for TypeScript projects",
 	"main": "index.js",
 	"keywords": [
@@ -20,14 +20,14 @@
 	"peerDependencies": {
 		"@typescript-eslint/eslint-plugin": "^6",
 		"@typescript-eslint/parser": "^6",
+		"eslint": "^8",
 		"eslint-config-next": "^13",
 		"eslint-config-prettier": "^8",
-		"eslint-plugin-react-hooks": "^4",
 		"eslint-plugin-react": "^7",
-		"eslint": "^8",
+		"eslint-plugin-react-hooks": "^4",
 		"typescript": "^5"
 	},
 	"devDependencies": {
-		"prettier-config-infernal": "^1.1.0"
+		"prettier-config-infernal": "^1.1.2"
 	}
 }
