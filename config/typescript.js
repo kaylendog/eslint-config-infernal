@@ -25,7 +25,11 @@ module.exports = {
 				"@typescript-eslint/explicit-member-accessibility": [
 					"warn",
 					{
-						accessibility: "no-public",
+						accessibility: "explicit",
+						overrides: {
+							constructors: "no-public",
+							methods: "no-public",
+						},
 					},
 				],
 				"@typescript-eslint/member-delimiter-style": "off",
@@ -53,27 +57,42 @@ module.exports = {
 							"call-signature",
 							// static fields
 							"public-static-field",
+							"public-static-readonly-field",
 							"protected-static-field",
+							"protected-static-readonly-field",
 							"private-static-field",
+							"private-static-readonly-field",
 							"#private-static-field",
+							"#private-static-readonly-field",
+							// static getters and setters
+							"static-get",
+							"static-set",
 							// static methods
 							"public-static-method",
-							"static-method",
 							"protected-static-method",
 							"private-static-method",
 							"#private-static-method",
+							// fields - abstract fields higher for visibility
+							"abstract-field",
+							"abstract-readonly-field",
+							"public-instance-field",
+							"public-instance-readonly-field",
+							"protected-instance-field",
+							"protected-instance-readonly-field",
+							"private-instance-field",
+							"private-instance-readonly-field",
+							"#private-instance-field",
+							"#private-instance-readonly-field",
 							// constructors
 							"public-constructor",
 							"protected-constructor",
 							"private-constructor",
 							"constructor",
-							// fields
-							"abstract-field",
-							"instance-field",
-							"field",
+							// getters and setters
+							"instance-get",
+							"instance-set",
 							// methods
 							"public-instance-method",
-							"method",
 							"protected-instance-method",
 							"private-instance-method",
 							"#private-instance-method",
@@ -141,13 +160,13 @@ module.exports = {
 					},
 				],
 				// TODO: doesn't behave with regular functions
-				// "@typescript-eslint/prefer-readonly-parameter-types": [
-				// 	"error",
-				// 	{
-				// 		checkParameterProperties: true,
-				// 		treatMethodsAsReadonly: true,
-				// 	},
-				// ],
+				"@typescript-eslint/prefer-readonly-parameter-types": [
+					"error",
+					{
+						checkParameterProperties: true,
+						treatMethodsAsReadonly: true,
+					},
+				],
 				"@typescript-eslint/switch-exhaustiveness-check": "error",
 				// disabled in favour of compiler definitions - see https://typescript-eslint.io/rules/typedef/
 				"@typescript-eslint/typedef": "off",
@@ -166,7 +185,7 @@ module.exports = {
 				"@typescript-eslint/no-magic-numbers": [
 					"error",
 					{
-						// allow -50 to 50
+						// allow -50 to 50 since these are common
 						ignore: Array.from({ length: 101 }).map((_, i) => i - 50),
 						ignoreArrayIndexes: true,
 						ignoreDefaultValues: true,

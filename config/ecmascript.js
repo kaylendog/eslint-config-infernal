@@ -51,6 +51,7 @@ module.exports = {
 		"max-lines-per-function": ["warn", 100],
 		"max-nested-callbacks": ["warn", 4],
 		"max-params": ["warn", 4],
+		// TODO: this is annoying
 		"multiline-comment-style": ["warn", "starred-block"],
 		"new-cap": "error",
 		"no-alert": "error",
