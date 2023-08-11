@@ -22,7 +22,7 @@
 		"@typescript-eslint/parser": "^6",
 		"eslint": "^8",
 		"eslint-config-next": "^13",
-		"eslint-config-prettier": "^8",
+		"eslint-config-prettier": "^9",
 		"eslint-plugin-react": "^7",
 		"eslint-plugin-react-hooks": "^4",
 		"typescript": "^5"
