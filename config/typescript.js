@@ -18,6 +18,8 @@ module.exports = {
 			],
 			files: ["*.{ts, mts, cts, tsx}"],
 			rules: {
+				// disabled since provided by typescript compiler
+				"no-undef": "off",
 				// fixable - supported
 				"@typescript-eslint/consistent-type-exports": "warn",
 				// prefer no-type-imports since prettier removes the "type" keyword from imports
@@ -159,13 +161,8 @@ module.exports = {
 						prefer: "parameter-property",
 					},
 				],
-				"@typescript-eslint/prefer-readonly-parameter-types": [
-					"error",
-					{
-						checkParameterProperties: false,
-						treatMethodsAsReadonly: false,
-					},
-				],
+				// TODO: disabled for now - has some inference issues
+				"@typescript-eslint/prefer-readonly-parameter-types": "off",
 				"@typescript-eslint/switch-exhaustiveness-check": "error",
 				// disabled in favour of compiler definitions - see https://typescript-eslint.io/rules/typedef/
 				"@typescript-eslint/typedef": "off",
@@ -203,6 +200,8 @@ module.exports = {
 				"@typescript-eslint/no-unused-expressions": "warn",
 				"no-use-before-define": "off",
 				"@typescript-eslint/no-use-before-define": "error",
+				"no-unused-vars": "off",
+				"@typescript-eslint/no-unused-vars": "error",
 			},
 		},
 	],
