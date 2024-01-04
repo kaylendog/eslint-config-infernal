@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-infernal",
-	"version": "3.0.1",
+	"version": "4.0.0",
 	"description": "Personal ESLint config for TypeScript projects",
 	"main": "index.js",
 	"keywords": [

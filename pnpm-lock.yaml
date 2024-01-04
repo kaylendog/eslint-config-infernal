@@ -33,7 +33,7 @@ dependencies:
 devDependencies:
   prettier-config-infernal:
     specifier: ^1.1.2
-    version: 1.1.2(prettier@3.0.0)
+    version: 1.1.2(prettier@3.1.1)
 
 packages:
 
@@ -1857,16 +1857,16 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: false
 
-  /prettier-config-infernal@1.1.2(prettier@3.0.0):
+  /prettier-config-infernal@1.1.2(prettier@3.1.1):
     resolution: {integrity: sha512-ORISpociGNdXAMcjm+XkEnShpRriT7qMrEvk6yJTVC3/ET8tuCU8otMYc27lYKa/M+Yoc/Z9cDQh0+a0wCsdJQ==}
     peerDependencies:
       prettier: ^3.0.0
     dependencies:
-      prettier: 3.0.0
+      prettier: 3.1.1
     dev: true
 
-  /prettier@3.0.0:
-    resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
+  /prettier@3.1.1:
+    resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true

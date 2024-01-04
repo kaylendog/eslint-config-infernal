@@ -18,6 +18,10 @@ module.exports = {
 			],
 			files: ["*.{ts, mts, cts, tsx}"],
 			rules: {
+				// rules we need to disable
+				"new-cap": "off",
+				"no-void": "off",
+				"no-undef": "off",
 				// fixable - supported
 				"@typescript-eslint/consistent-type-exports": "warn",
 				// prefer no-type-imports since prettier removes the "type" keyword from imports
