@@ -22,6 +22,7 @@ module.exports = {
 				"new-cap": "off",
 				"no-void": "off",
 				"no-undef": "off",
+				"no-useless-constructor": "off",
 				// fixable - supported
 				"@typescript-eslint/consistent-type-exports": "warn",
 				// prefer no-type-imports since prettier removes the "type" keyword from imports
@@ -139,6 +140,10 @@ module.exports = {
 					{
 						selector: "function",
 						format: ["camelCase", "PascalCase"],
+					},
+					{
+						selector: "enumMember",
+						format: ["PascalCase"],
 					},
 				],
 				"@typescript-eslint/no-redundant-type-constituents": "error",
