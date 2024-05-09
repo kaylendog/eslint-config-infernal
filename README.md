@@ -7,7 +7,7 @@ A personal ESLint config for my projects.
 Install the package, along with its peers:
 
 ```sh
-$ npm install --save-dev eslint@^8.44.0 typescript@^5.1.6 @typescript-eslint/parser@^6.0.0 @typescript-eslint/parser@^6.0.0 eslint-config-infernal
+$ npm install --save-dev @typescript-eslint/parser@^7 @typescript-eslint/parser@^7 eslint@^8 eslint-config-next@^14 eslint-config-prettier@^9 eslint-plugin-react@^7 eslint-plugin-react-hooks@^4 typescript@^5 eslint-config-infernal
 ```
 
 Create the ESLint config file in your project root, specifying either your project's
