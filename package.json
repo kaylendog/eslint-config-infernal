@@ -28,6 +28,6 @@
 		"typescript": "^5"
 	},
 	"devDependencies": {
-		"prettier-config-infernal": "^3"
+		"prettier-config-infernal": "^3.0.0"
 	}
 }
