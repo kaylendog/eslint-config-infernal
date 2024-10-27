@@ -135,7 +135,7 @@ tsconfig.json
 
 # config files
 .prettierrc.json
-.eslintrc*
+eslint.config.mjs
 
 # lockfile
 pnpm-lock.yaml
