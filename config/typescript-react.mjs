@@ -7,6 +7,7 @@ const ECMA_VERSION = 2020;
 export default [
 	...typescriptBrowser,
 	{
+		name: "eslint-config-infernal/react",
 		plugins: { "react-hooks": reactHooks },
 	},
 ];
