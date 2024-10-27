@@ -16,6 +16,16 @@
 		"name": "Kaylen Dart",
 		"email": "actuallyori@gmail.com"
 	},
+	"exports": {
+		".": {
+			"default": "./index.mjs",
+			"typescript": "./index.mjs",
+			"react": "./react.mjs",
+			"next": "./next.mjs",
+			"browser": "./browser.mjs",
+			"ecmascript": "./ecmascript.mjs"
+		}
+	},
 	"license": "MIT",
 	"dependencies": {
 		"@eslint/js": "^9",
